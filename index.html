@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Skolansökningar</h1>
+    
+        <input type="radio" name="programme" value="Java" id="choice1" />
+        <label for="choice1">.NET</label>
+     
+    
+        <input type="radio" name="programme" value="Backend" id="choice2" />
+        <label for="choice2">Backend</label>
+
+    
+        <input type="radio" name="programme" value="Frontend" id="choice3" />
+        <label for="choice3">Frontend</label>
+    
+    <table id="myTable2" class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th onclick="sortTable(0)" scope="col">Förnamn</th>
+                <th onclick="sortTable(1)" scope="col">Efternamn</th>
+                <th onclick="sortTable(2)" scope="col">Ålder</th>
+                <th onclick="sortTable(3)" scope="col">Hobbies</th>
+                <th onclick="sortTable(4)" scope="col">Program</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>
